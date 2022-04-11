@@ -53,3 +53,8 @@ C:\Users\ricun\source\repos\Chapter.WebApi\Chapter.WebApi\obj\Debug\net6.0\Chapt
 C:\Users\ricun\source\repos\Chapter.WebApi\Chapter.WebApi\obj\Debug\net6.0\ref\Chapter.WebApi.dll
 C:\Users\ricun\source\repos\Chapter.WebApi\Chapter.WebApi\obj\Debug\net6.0\Chapter.WebApi.pdb
 C:\Users\ricun\source\repos\Chapter.WebApi\Chapter.WebApi\obj\Debug\net6.0\Chapter.WebApi.genruntimeconfig.cache
+C:\Users\ricun\source\repos\Chapter.WebApi\Chapter.WebApi\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Users\ricun\source\repos\Chapter.WebApi\Chapter.WebApi\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\ricun\source\repos\Chapter.WebApi\Chapter.WebApi\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\ricun\source\repos\Chapter.WebApi\Chapter.WebApi\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\ricun\source\repos\Chapter.WebApi\Chapter.WebApi\obj\Debug\net6.0\Chapter.WebApi.MvcApplicationPartsAssemblyInfo.cs
