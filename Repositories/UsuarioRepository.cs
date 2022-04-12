@@ -22,7 +22,7 @@ namespace Chapter.WebApi.Repositories
             {
                 usuarioEncontrado.Email = usuario.Email;
                 usuarioEncontrado.Senha = usuario.Senha;    
-                //usuarioEncontrado.Tipo = usuario.Tipo;
+                usuarioEncontrado.Tipo = usuario.Tipo;
             }
 
             _context.Usuarios.Update(usuarioEncontrado);
@@ -58,7 +58,7 @@ namespace Chapter.WebApi.Repositories
 
         public Usuario Login(string email, string senha)
         {
-            throw new NotImplementedException();
+            return _context.Usuarios.FirstOrDefault(usuario => usuario.Email == email && usuario.Senha == senha);
         }
     }
 }

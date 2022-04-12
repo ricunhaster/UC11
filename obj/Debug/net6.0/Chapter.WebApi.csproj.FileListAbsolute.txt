@@ -58,3 +58,4 @@ C:\Users\ricun\source\repos\Chapter.WebApi\Chapter.WebApi\bin\Debug\net6.0\Swash
 C:\Users\ricun\source\repos\Chapter.WebApi\Chapter.WebApi\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\ricun\source\repos\Chapter.WebApi\Chapter.WebApi\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
 C:\Users\ricun\source\repos\Chapter.WebApi\Chapter.WebApi\obj\Debug\net6.0\Chapter.WebApi.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\ricun\source\repos\Chapter.WebApi\Chapter.WebApi\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

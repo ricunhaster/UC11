@@ -1,5 +1,6 @@
 ﻿using Chapter.WebApi.Models;
 using Chapter.WebApi.Repositories;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -10,6 +11,8 @@ namespace Chapter.WebApi.Controllers
     [Route("api/[controller]")]
 
     [ApiController]
+
+    [Authorize]
     public class LivroController : ControllerBase
     {
         private readonly LivroRepository _livroRepository;
@@ -57,6 +60,8 @@ namespace Chapter.WebApi.Controllers
                 throw new Exception(e.Message);
             }
         }
+
+        [Authorize(Roles = "1")]
        
         [HttpPost]
 
@@ -96,6 +101,8 @@ namespace Chapter.WebApi.Controllers
             }
 
        }
+
+       [Authorize(Roles = "1")]
 
        [HttpDelete("{id}")]
 

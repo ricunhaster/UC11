@@ -1,6 +1,7 @@
 using Chapter.WebApi.Contexts;
 using Chapter.WebApi.Interfaces;
 using Chapter.WebApi.Repositories;
+using Microsoft.IdentityModel.Tokens;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -25,6 +26,24 @@ builder.Services.AddSwaggerGen
 
 } 
     );
+
+builder.Services.AddAuthentication(o =>
+{
+    o.DefaultChallengeScheme = "JwtBearer";
+    o.DefaultAuthenticateScheme= "JwtBearer";
+}).AddJwtBearer("JwtBearer", o =>
+    {
+        o.TokenValidationParameters = new TokenValidationParameters
+        {
+            ValidateIssuer = true,
+            ValidateAudience = true,
+            ValidateLifetime = true,
+            IssuerSigningKey = new SymmetricSecurityKey(System.Text.Encoding.UTF8.GetBytes("chapter-chave-autenticacao")),
+            ClockSkew = TimeSpan.FromMinutes(60),
+            ValidIssuer = "chapter.webapi",
+            ValidAudience = "chapter.webapi"
+        };
+    }) ;
 
 builder.Services.AddScoped<ChapterContext, ChapterContext >();
 
@@ -61,6 +80,8 @@ app.UseStaticFiles();
 app.UseRouting();
 
 app.UseCors("CorsPolicy");
+
+app.UseAuthentication();
 
 app.UseAuthorization();
 
